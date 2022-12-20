@@ -1,0 +1,5 @@
+this code is from Andrea Vaccaro GitHub:andreaVMC
+        This code (index.html, style.css, script.js) is totaly free to use for everyone who need it,
+        if you recognized the credits of the code that you use to Andrea Vaccaro(the creator)
+        GitHub: andreaVMC
+        -->https://github.com/andreaVMC

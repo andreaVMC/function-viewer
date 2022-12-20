@@ -1,0 +1,37 @@
+<!--this code is from Andrea Vaccaro GitHub:andreaVMC-->
+<!--https://github.com/andreaVMC-->
+<!DOCTYPE html>
+<html>    
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "style.css" />
+        <script type="text/javascript" src="script.js"></script> <!--coolego il file javascript esterno-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="equazioni_box"> <!--form per le verie informmazioni delle formule-->
+                <div id="bx" style="margin-top:10%;"><div class="tag-xmin tag">xmin:</div><input type="number" id="xmin" value="-5"><br></div>
+                <div id="bx"><div class="tag-xmax tag">xmax:</div><input type="number" id="xmax" value="10"><br></div>
+                <div id="bx"><div class="tag-ymin tag">ymin:</div><input type="number" id="ymin" value="-5"><br></div>
+                <div id="bx"><div class="tag-ymax tag">ymax:</div><input type="number" id="ymax" value="10"><br></div>
+                <button id="graf_b grafico-b" onclick="grafico()">genera grafico</button><br><br> <!--chiamo la funzione per generare il grafico-->
+                <div id="bx"><div class="tag-retta tag">f(x)=</div><input type="text" id="equazione-retta" value="2x+2"><br></div>
+                <button id="graf_b retta-b" onclick="retta()">disegna retta</button><br><br> <!--chiamo la funzione per generare la retta-->
+                <div id="bx"><div class="tag-circ tag">0=x2+y2</div><input type="text" id="equazione-circonferenza" value="-5x-5y-4"><br></div>
+                <button id="graf_b circ-b" onclick="circonferenza()">disegna circonferenza</button><br><br> <!--chiamo la funzione per generare la circonferenza-->
+                <div id="bx"><div class="tag-parabola tag">f(y)=</div><input type="text" id="equazione-parabola" value="x2-2x+2"><br></div>
+                <button id="graf_b parabola-b" onclick="parabola()">disegna parabola</button><br> <!--chiamo la funzione per generare la parabola-->
+                <div id="bx"><div class="tag-circ tag">cos(</div><input type="text" id="equazione-coseno" value="x"/>)<br></div>
+                <button id="graf_b cos-b" onclick="cos()">disegna sinusoide</button><br> <!--chiamo la funzione per generare la sinusoide del coseno-->
+                <div id="bx"><div class="tag-colore tag">colore:</div><input type="color" id="colore" value="#ff0000"></div>
+            </div>
+            <div class="grafico_box">
+                <svg id="svg" height="900" width="900"> <!--creo il box in cui disegnero le varie funzioni-->
+                </svg>
+            </div>
+            <div id="funzioni_box">
+            </div>
+        </div>
+    </body>
+</html>
+
+
